@@ -2,7 +2,7 @@
 }
 
 body{
-    height: 100vh;
+    height: fit-content;
 }
 
 .background-container{
@@ -14,6 +14,8 @@ body{
     width: 100%;
     background: url('../../assets/Tesla-model-y-bg.avif');
     background-size: cover;
+        align-items: center;
+
 }
 
 .header-main-text-container{
@@ -33,7 +35,6 @@ body{
     font-size: 2rem;
 }
 
-
 .places-list{
     display: flex;
     width: 100vw;
@@ -41,4 +42,8 @@ body{
     justify-content: space-around;
     list-style-type: none;
     padding: 0;
+}
+
+.paragraph-container{
+    padding: 20rem 0 20rem 0;
 }
