@@ -1,0 +1,82 @@
+body{
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    font-family: 'GeneralSans-Regular', Arial, Helvetica, sans-serif;
+}
+
+.scroll-watcher{
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+    to { scale: 1 1 }
+}
+
+.primary-header{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 100svh;
+    overflow-x: clip;
+    padding-block: 7rem;
+    margin-block-end: 3rem;
+}
+
+.hero-img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.hero-text-container{
+    margin-block-end: 12rem;
+    z-index: 2;
+}
+
+.header-title{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.header-subtext{
+    font-size: 1.5rem;
+}
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    gap: 4rem;
+}
+
+.paragraph-container{
+    display: grid;
+    gap: 1rem
+}
+
+.paragraph-title{
+    margin-block-end: 1rem;
+}
+
+p{
+    line-height: 2rem;
+}
+
+img{
+    width: 100%;
+}

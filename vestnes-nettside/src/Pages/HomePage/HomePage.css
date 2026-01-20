@@ -1,44 +1,45 @@
 body{
     display: block;
-    height: fit-content;
+    height: auto;
     margin: 0;
     padding: 0;
+    font-family: 'Clash Display', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .background-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
     height: 100vh;
     align-items: center;
-    overflow: hidden;
+    margin-bottom: 5rem;
 }
 
 .parallax-effect-img {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
     z-index: -1;
+    pointer-events: none;
 }
 
 .header-main-text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem;
+    padding: 8vh 2rem;
 }
 
 .img-header-title{
-    font-size: 6rem;
+    font-size: clamp(2rem, 6vw, 6rem);
     text-align: center;
     margin: 0;
 }
 
 .header-support-text{
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 .places-list{
@@ -56,11 +57,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0;
 }
 
 /*  section 3  */
@@ -79,9 +80,9 @@ body{
 
 .text-should-stay-fixed {
     position: sticky;
-    top: 20vh;
+    top: 12vh;
     max-width: 80%;
-    padding: 10rem 0 35rem 0;
+    padding: 4rem 0;
     color: white;
     justify-self: center;
 }
@@ -89,21 +90,100 @@ body{
 .right-side-images{
     display: flex;
     flex-direction: column;
-    margin: 10rem 0 20rem 0;
+    margin: 5rem 0;
     justify-self: center;
 }
 
 .moving-img{
     object-fit: cover;
-    width: 25rem;
+    width: 28rem;
+    max-width: 90%;
     height: 25rem;
     border-radius: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 /*  section 4  */
 
-.TEST{
-    height: 100vh;
+.cards-container{
+    display: flex;
     background-color: white;
+    padding-top: 10rem;
+    justify-content: center;
+}
+
+.side-by-side-card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.box-card{
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    width: 100%;
+    max-width: 35rem;
+    background-color: #F5B5FF;
+    border-radius: 4em;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.box-card-header{
+    font-size: 2.5em;
+    color: black;
+    padding: 3rem 3rem 0 3rem;
+    margin: 0;
+}
+
+.box-card-text{
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    width: 80%;
+    color: black;
+}
+
+@media(max-width: 1100px){
+    .side-by-side-card-container{
+        align-items: center;
+    }
+
+    .image-location-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .text-should-stay-fixed {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .right-side-images{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-self: center;
+    }
+
+    .header-main-text-container{
+        padding: 4rem 1rem;
+    }
+    .img-header-title{
+        font-size: 2.5rem;
+    }
+
+    .side-by-side-card-container{
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+    }
+    .places-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        display: none;
+    }
 }
