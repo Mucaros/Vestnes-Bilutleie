@@ -80,3 +80,91 @@ p{
 img{
     width: 100%;
 }
+
+/* scrolling images section */
+
+.scrolling-images-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    margin-block-end: 5rem;
+}
+
+.scrolling-title-container{
+    display: grid;
+}
+
+.scrolling-title{
+    padding-top: 5rem;
+    padding-right: 2rem;
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.scrolling-image-container{
+    display: grid;
+    gap: 5rem;
+    padding-top: 5rem;
+}
+
+.scrolling-image{
+    object-fit: cover;
+    aspect-ratio: 16 / 14;
+}
+
+
+/* info cards section*/
+
+.info-cards-wrapper{
+    display: grid;
+    height: fit-content;
+    gap: 2rem;
+}
+
+.info-card{
+    background-color: teal;
+    padding: 2rem;
+    border-radius: 2em;
+    height: auto;
+}
+
+.yellow{
+    background-color: rgb(102, 155, 110);
+}
+
+.info-card-title{
+    margin-block-end: 0;
+}
+
+.info-card-description{
+    
+}
+
+/* Footer */
+
+.footer-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-list-element{
+    color: black;
+}
+
+
+
+@media(max-width: 1000px){
+    .scrolling-images-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .scrolling-title{
+        text-align: center;
+    }
+}
