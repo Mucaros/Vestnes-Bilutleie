@@ -1,11 +1,4 @@
-body{
-    height: fit-content;
-    width: fit-content;
-    background-color: black;
-    font-family: 'GeneralSans-Regular', Arial, Helvetica, sans-serif;
-}
-
-.scroll-watcher{
+/* .scroll-watcher{
     height: 10px;
     position: fixed;
     top: 0;
@@ -21,7 +14,7 @@ body{
 
 @keyframes scroll-watcher {
     to { scale: 1 1 }
-}
+} */
 
 .primary-header{
     display: grid;
@@ -29,22 +22,38 @@ body{
     position: relative;
     height: 100svh;
     overflow-x: clip;
-    padding-block: 7rem;
     margin-block-end: 3rem;
+    background-color: none;
 }
 
 .hero-img{
     position: absolute;
     object-fit: cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     opacity: 0.5;
+
+    animation: header-image-animation forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 .hero-text-container{
     margin-block-end: 12rem;
     z-index: 2;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -200px;
+}
+
+@keyframes fade-out {
+    to { opacity: 0;}
+}
+
+@keyframes header-image-animation {
+    25% { opacity: .8; }
+    85%, 100% { opacity: 0; scale: 2}
 }
 
 .header-title{
@@ -62,11 +71,13 @@ body{
     display: grid;
     place-items: center;
     gap: 4rem;
+    z-index: 3;
 }
 
 .paragraph-container{
     display: grid;
-    gap: 1rem
+    gap: 1rem;
+    z-index: 4;
 }
 
 .paragraph-title{
@@ -119,7 +130,8 @@ img{
 .info-cards-wrapper{
     display: grid;
     height: fit-content;
-    gap: 2rem;
+    gap: 5rem;
+    margin-block-end: 10rem;
 }
 
 .info-card{
@@ -127,10 +139,19 @@ img{
     padding: 2rem;
     border-radius: 2em;
     height: auto;
+    position: sticky;
+    top: 12rem;
+    min-height: 16rem;
 }
 
-.yellow{
+.second-card{
+    top: 16rem;
+    background-color: rgb(131, 87, 212);
+}
+
+.third-card{
     background-color: rgb(102, 155, 110);
+    top: 20rem;
 }
 
 .info-card-title{
@@ -147,7 +168,7 @@ img{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 5rem;
@@ -157,7 +178,19 @@ img{
     color: black;
 }
 
+@media(prefers-reduced-motion: no-preference){
+    .fade-in{
+        animation: fade-in;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 700px;
+    }
 
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0}
+        to {scale: 1; opacity: 1;}
+    }
+}
 
 @media(max-width: 1000px){
     .scrolling-images-section{
