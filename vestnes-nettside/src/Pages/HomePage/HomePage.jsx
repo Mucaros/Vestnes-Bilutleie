@@ -4,6 +4,7 @@ import redTesla from '/red-tesla.jpg'
 import Bergen from '/Bergen.jpg'
 import Åsane from '../../../public/Åsane.jpg'
 import Stord from '/Stord.jpg'
+import Form from '../../Components/form'
 // import Eivind from '../../../public/Eivind-bil.jpg'
 
 export default function HomePage() {
@@ -23,12 +24,15 @@ export default function HomePage() {
 
                 <div className='paragraph-container'>
                     <h1 className='paragraph-title'>Eivind Vestnes</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p>
+                    <p>Eivind Vestnes har lang erfaring fra trafikkskolebransjen og har i mange år hjulpet elever trygt frem til førerkortet. Etter å ha drevet Vestnes Trafikkskole, starter han nå på nytt med et tydelig mål: å gjøre oppkjøringen enklere, roligere og mer tilgjengelig for dem som trenger det.</p>
+
+                    <p>Med fokus på utleie av oppkjøringsbil gir Eivind deg muligheten til å møte førerprøven på et sted som føles mer oversiktlig – uten unødvendig stress. Her handler det ikke om å presse mest mulig inn på kort tid, men om å skape trygghet, forutsigbarhet og en god opplevelse på en viktig dag.</p>
+
+                    <p>Eivind vet hvor mye nerver som kan spille inn under en oppkjøring. Derfor er tilbudet bygget rundt én tanke: Du skal føle deg forberedt, ivaretatt og klar – fra første møte til prøven er over.</p>
                 </div>
 
-                <img className='fade-in' src={Tesla} alt="" />
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p>
+                {/* <img className='fade-in' src={Tesla} alt="" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p> */}
 
 
 
@@ -63,19 +67,7 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                <div className='form-container'>
-                    <form action="">
-                        <label htmlFor="fname">Navn:</label>
-                        <input type="text" id="fname" name="fname"></input>
-                        <label htmlFor="phone">Tlf:</label>
-                        <input type="number" id="phone" name="lname"></input>
-                        <label htmlFor="email">email:</label>
-                        <input type="email" id="email" name="email"/>
-                        <label htmlFor="melding">melding:</label>
-                        <textarea id="message" name="message"></textarea>
-                        <input type="submit" value="Submit"></input>
-                    </form>
-                </div>
+                <Form />
 
             </section>
 

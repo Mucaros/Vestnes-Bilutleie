@@ -1,0 +1,46 @@
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1c1d1d;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    border-radius: 2em;
+    place-items: center;
+    margin-block-end: 10em;
+    height: fit-content;
+}
+
+.form-container form{
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: start;
+    width: 60%;
+    height: fit-content;
+}
+
+label{
+    font-size: 1em;
+}
+
+input, textarea{ 
+    background-color: #1c1d1d;
+    border: none;
+    border-bottom: solid 2px rgb(131, 131, 131);
+
+    height: 3rem;
+    width: 20rem;
+    margin-block-end: 2rem;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: teal;
+    border: none;
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: fit-content;
+}
