@@ -1,4 +1,4 @@
-import './HomePage2.css'
+import './HomePage.css'
 import Tesla from '../../assets/Tesla-model-y-bg.avif'
 import redTesla from '/red-tesla.jpg'
 import Bergen from '/Bergen.jpg'

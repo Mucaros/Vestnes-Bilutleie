@@ -1,189 +1,209 @@
-body{
-    display: block;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    font-family: 'Clash Display', Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+/* .scroll-watcher{
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
 }
 
-.background-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    margin-bottom: 5rem;
+@keyframes scroll-watcher {
+    to { scale: 1 1 }
+} */
+
+body {
+  scroll-behavior: smooth;
 }
 
-.parallax-effect-img {
-    object-fit: cover;
+.primary-header{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 100svh;
+    overflow-x: clip;
+    margin-block-end: 3rem;
+    background-color: none;
+}
+
+.hero-img{
     position: absolute;
-    width: 100%;
+    object-fit: cover;
     height: 100vh;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.header-main-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8vh 2rem;
-}
-
-.img-header-title{
-    font-size: clamp(2rem, 6vw, 6rem);
-    text-align: center;
-    margin: 0;
-}
-
-.header-support-text{
-    font-size: clamp(1rem, 2.5vw, 2rem);
-}
-
-.places-list{
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
+    z-index: 1;
+    opacity: 0.5;
+
+    animation: header-image-animation forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
-/*  section 2  */
+.hero-text-container{
+    margin-block-end: 12rem;
+    z-index: 2;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -200px;
+}
+
+@keyframes fade-out {
+    to { opacity: 0;}
+}
+
+@keyframes header-image-animation {
+    25% { opacity: .8; }
+    85%, 100% { opacity: 0; scale: 2}
+}
+
+.header-title{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.header-subtext{
+    font-size: 1.5rem;
+}
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    gap: 8rem;
+    z-index: 3;
+}
 
 .paragraph-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-    padding: 2rem 0;
+    display: grid;
+    gap: 1rem;
+    z-index: 4;
 }
 
-/*  section 3  */
+.paragraph-title{
+    margin-block-end: 1rem;
+}
 
-.image-location-container{
-    background-color: rgb(29, 29, 29);
+p{
+    line-height: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* scrolling images section */
+
+.scrolling-images-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: fit-content;
-    align-items: start;
+    margin-block-end: 5rem;
 }
 
-.left-side-text{
-    height: 100%;
+.scrolling-title-container{
+    display: grid;
 }
 
-.text-should-stay-fixed {
+.scrolling-title{
+    padding-top: 5rem;
+    padding-right: 2rem;
     position: sticky;
-    top: 12vh;
-    max-width: 80%;
-    padding: 4rem 0;
-    color: white;
-    justify-self: center;
+    top: 0;
+    align-self: start;
 }
 
-.right-side-images{
-    display: flex;
-    flex-direction: column;
-    margin: 5rem 0;
-    justify-self: center;
+.scrolling-image-container{
+    display: grid;
+    gap: 5rem;
+    padding-top: 5rem;
 }
 
-.moving-img{
+.scrolling-image{
     object-fit: cover;
-    width: 28rem;
-    max-width: 90%;
-    height: 25rem;
-    border-radius: 1rem;
-    margin-bottom: 3rem;
+    aspect-ratio: 16 / 14;
 }
 
-/*  section 4  */
 
-.cards-container{
-    display: flex;
-    background-color: white;
-    padding-top: 10rem;
-    justify-content: center;
+/* info cards section*/
+
+.info-cards-wrapper{
+    display: grid;
+    height: fit-content;
+    gap: 5rem;
+    margin-block-end: 10rem;
 }
 
-.side-by-side-card-container{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.box-card{
-    display: flex;
-    flex-direction: column;
-    min-height: 20rem;
-    width: 100%;
-    max-width: 35rem;
-    background-color: #F5B5FF;
-    border-radius: 4em;
+.info-card{
+    background-color: teal;
     padding: 2rem;
-    box-sizing: border-box;
+    border-radius: 2em;
+    height: auto;
+    position: sticky;
+    top: 12rem;
+    min-height: 16rem;
 }
 
-.box-card-header{
-    font-size: 2.5em;
-    color: black;
-    padding: 3rem 3rem 0 3rem;
-    margin: 0;
+.second-card{
+    top: 16rem;
+    background-color: #8357d4;
 }
 
-.box-card-text{
-    padding-left: 3rem;
-    font-size: 1.5rem;
-    width: 80%;
-    color: black;
+.third-card{
+    background-color: rgb(102, 155, 110);
+    top: 20rem;
 }
 
-@media(max-width: 1100px){
-    .side-by-side-card-container{
-        align-items: center;
+.info-card-title{
+    margin-block-end: 0;
+}
+
+.info-card-description{
+    font-size: 1.5em;
+}
+
+
+
+/* Footer */
+
+.footer-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1c1d1d;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-list-element{
+    color: white;
+}
+
+@media(prefers-reduced-motion: no-preference){
+    .fade-in{
+        animation: fade-in;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 700px;
     }
 
-    .image-location-container{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0}
+        to {scale: 1; opacity: 1;}
     }
+}
 
-    .text-should-stay-fixed {
+@media(max-width: 1000px){
+    .scrolling-images-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .scrolling-title{
         text-align: center;
-        padding-bottom: 2rem;
-    }
-
-    .right-side-images{
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        align-self: center;
-    }
-
-    .header-main-text-container{
-        padding: 4rem 1rem;
-    }
-    .img-header-title{
-        font-size: 2.5rem;
-    }
-
-    .side-by-side-card-container{
-        flex-direction: column;
-        gap: 2rem;
-        width: 90%;
-    }
-    .places-list{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        display: none;
     }
 }
