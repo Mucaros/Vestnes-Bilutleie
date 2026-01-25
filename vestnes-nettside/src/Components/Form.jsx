@@ -12,7 +12,7 @@ export default function Form() {
                 <input type="email" id="email" name="email" />
                 <label htmlFor="message">Melding:</label>
                 <textarea id="message" name="message"></textarea>
-                <button className='submit-button' type="submit" value="submit">Submit</button>
+                <button className='submit-button' type="submit" value="submit">Send</button>
             </form>
         </div>
     )
