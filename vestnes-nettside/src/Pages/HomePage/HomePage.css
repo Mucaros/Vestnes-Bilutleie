@@ -107,6 +107,14 @@ body {
     margin: 0;
 }
 
+.oppkjørings-steder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    list-style-type: none;
+}
+
 p {
     line-height: 2rem;
 }
@@ -231,30 +239,96 @@ img {
 }
 
 @media(max-width: 1000px) {
+    .content {
+        width: 90%; /* Increase width on mobile */
+        padding: 0 1rem; /* Add some breathing room */
+    }
+
     .scrolling-images-section {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .scrolling-title {
         text-align: center;
+        padding-right: 0; /* Remove right padding on mobile */
+        position: static; /* Make it not sticky on mobile */
+        padding-top: 2rem;
+    }
+
+    .scrolling-image-container {
+        padding-top: 2rem;
+        gap: 2rem;
     }
 
     .hero-text-container {
-        width: 70%;
-        align-items: center;
+        width: 90%; /* Increase width */
+        padding: 0 1rem;
+        text-align: center;
     }
 
     .header-title {
-        font-size: 3rem;
-        margin-bottom: 2rem;
+        font-size: 2.5rem; /* Smaller on mobile */
+        margin-bottom: 1rem;
     }
 
     .header-subtext {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Smaller on mobile */
     }
 
-    :root{
-        font-size: 20px;
+    .primary-header {
+        overflow-x: visible; /* Allow content to be visible */
+    }
+
+    .footer-list {
+        flex-direction: column; /* Stack footer items */
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .info-cards-wrapper {
+        gap: 2rem;
+        margin-block-end: 5rem;
+    }
+
+    .info-card {
+        position: static; /* Remove sticky on mobile */
+        top: auto;
+    }
+
+    .second-card,
+    .third-card {
+        top: auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .content {
+        width: 90%;
+        padding: 0 0.5rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .header-subtext {
+        font-size: 1rem;
+    }
+
+    .info-card-description {
+        font-size: 1.2em;
+    }
+
+    .scrolling-title {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .scrolling-image-container {
+        gap: 1.5rem;
+        padding-top: 1.5rem;
     }
 }

@@ -28,15 +28,16 @@ export default function HomePage() {
                     <p>Noen har strøket i Bergen og synes å kjøre i Bergen er for vanskelig. Da vil en oppkjøring på oss eller Stord bli annerledes for deg og mye lettere. Normalt er ventetiden for å kjøre mye lengre i Bergen enn i distriktet. Kontakt oss for bestilling av ny oppkjøring så vi kan planlegge sammen. Dette er et tilbud for deg som kjører automat</p>
 
                     <div className='velg-oppkjøring'>
-                        <h2>velg oppkjøring i:</h2>
-                        <p>
-                            <br />Bergen
-                            <br />Førde
-                            <br />Stord
-                            <br />Sogndal
-                            <br />Voss
-                            <br />Odda
-                            <br />Haugesund</p>
+                        <ul className='oppkjørings-steder'>
+                            <li className='no-list-style'><strong>velg oppkjøring i:</strong></li>
+                            <li>Bergen</li>
+                            <li>Førde</li>
+                            <li>Stord</li>
+                            <li>Sogndal</li>
+                            <li>Voss</li>
+                            <li>Odda</li>
+                            <li>Haugesund</li>
+                        </ul>
                     </div>
                 </div>
 

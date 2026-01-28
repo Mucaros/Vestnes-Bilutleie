@@ -3,9 +3,9 @@ import './Form.css'
 export default function Form() {
     return (
         <div className='form-container'>
-            <form action="">
-                <label htmlFor="fname">Navn:</label>
-                <input type="text" id="fname" name="fname"></input>
+            <form action="https://formspree.io/f/xqebzbol" method="post">
+                <label htmlFor="name">Navn:</label>
+                <input type="text" id="name" name="name"></input>
                 <label htmlFor="phone">Tlf:</label>
                 <input type="number" id="phone" name="phone"></input>
                 <label htmlFor="email">Email:</label>
