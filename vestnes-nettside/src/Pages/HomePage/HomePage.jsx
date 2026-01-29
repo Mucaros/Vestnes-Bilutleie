@@ -25,7 +25,7 @@ export default function HomePage() {
 
                 <div className='paragraph-container'>
                     <h1 className='paragraph-title'>Strøket i Bergen?</h1>
-                    <p>Noen har strøket i Bergen og synes å kjøre i Bergen er for vanskelig. Da vil en oppkjøring på oss eller Stord bli annerledes for deg og mye lettere. Normalt er ventetiden for å kjøre mye lengre i Bergen enn i distriktet. Kontakt oss for bestilling av ny oppkjøring så vi kan planlegge sammen. Dette er et tilbud for deg som kjører automat</p>
+                    <p>Har du strøket i Bergen og synes å kjøre i Bergen er for vanskelig. Da vil en oppkjøring på oss eller Stord bli annerledes for deg og mye lettere. Normalt er ventetiden for å kjøre mye lengre i Bergen enn i distriktet. Kontakt oss for bestilling av ny oppkjøring så vi kan planlegge sammen. Dette er et tilbud for deg som kjører automat</p>
 
                     <div className='velg-oppkjøring'>
                         <ul className='oppkjørings-steder'>
