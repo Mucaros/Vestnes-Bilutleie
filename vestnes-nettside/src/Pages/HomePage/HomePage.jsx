@@ -25,7 +25,7 @@ export default function HomePage() {
 
                 <div className='paragraph-container'>
                     <h1 className='paragraph-title'>Strøket i Bergen?</h1>
-                    <p>Har du strøket i Bergen og synes å kjøre i Bergen er for vanskelig. Da vil en oppkjøring på oss eller Stord bli annerledes for deg og mye lettere. Normalt er ventetiden for å kjøre mye lengre i Bergen enn i distriktet. Kontakt oss for bestilling av ny oppkjøring så vi kan planlegge sammen. Dette er et tilbud for deg som kjører automat</p>
+                    <p>Har du strøket i Bergen og synes å kjøre i Bergen er for vanskelig. Da vil en oppkjøring på Voss eller Stord bli annerledes for deg og mye lettere. Normalt er ventetiden for å kjøre mye lengre i Bergen enn i distriktet. Kontakt oss for bestilling av ny oppkjøring så vi kan planlegge sammen. Dette er et tilbud for deg som kjører automat</p>
 
                     <div className='velg-oppkjøring-karusell'>
                         <div className='oppkjørings-steder'>
@@ -65,15 +65,10 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                {/* <div className='paragraph-container'>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.               </p>
-                </div> */}
-
                 <div className='info-cards-wrapper'>
                     <div className='info-card first-card'>
                         <h2 className='info-card-title'>Pris?</h2>
-                        <p className='info-card-description'>Det varierer så ta kontakt! Vi holder til i Bergen så det blir tillegg i pris ved oppkjøring utenfor Bergen </p>
+                        <p className='info-card-description'>Pris for å Leie bil til førerprøven er kr. 3000,- Vi holder til i Bergen så det blir tillegg i pris ved oppkjøring utenfor Bergen, ta kontakt for mer informasjon! </p>
                     </div>
                     <div className='info-card second-card'>
                         <h2 className='info-card-title'>Oppkjøring i Bergen</h2>
