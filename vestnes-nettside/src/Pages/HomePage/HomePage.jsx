@@ -81,7 +81,7 @@ export default function HomePage() {
                     </div>
                     <div className='info-card third-card'>
                         <h2 className='info-card-title'>Oppkjøring utenfor Bergen</h2>
-                        <p className='info-card-description'>velger du voss til oppkjøringsted kjører du til voss fra Bergen og er trygg på bil og instrumenter når vi ankommer Voss trafikkstasjon</p>
+                        <p className='info-card-description'>velger du Voss til oppkjøringsted kjører du til Voss fra Bergen og er trygg på bil og instrumenter når vi ankommer Voss trafikkstasjon</p>
                     </div>
                 </div>
 

@@ -29,6 +29,7 @@ input {
 
 input,
 textarea {
+    color: white;
     background-color: #1c1d1d;
     border: none;
     border-bottom: solid 2px rgb(131, 131, 131);
