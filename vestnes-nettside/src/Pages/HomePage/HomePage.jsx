@@ -1,11 +1,11 @@
 import './HomePage.css'
 import Tesla from '../../assets/Tesla-model-y-bg.avif'
 // import redTesla from '/red-tesla.jpg'
-import Bergen from '/Bergen.jpg'
-import Åsane from '../../../public/Åsane.jpg'
-import Stord from '/Stord.jpg'
+import Bergen from '/inside-car-thumb.jpg'
+import Åsane from '../../../public/inside-car.jpg'
+import Stord from '/front-of-car.jpg'
 import Form from '../../Components/form'
-import fullCar from '../../../public/full-car.jpg'
+import fullCar from '/full-car.jpg'
 // import Eivind from '../../../public/Eivind-bil.jpg'
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
                 <img className='hero-img' src={fullCar} alt="" />
                 <div className='hero-text-container'>
                     <h1 className='header-title'>Trenger du leie av bil <br /> til førerprøven?</h1>
-                    <p className='header-subtext'>Vanlig leie av skolebil til oppkjøring hos oss koster 3000kr</p>
+                    <p className='header-subtext'>Scroll nedover på nettsiden for mer informasjon!</p>
                 </div>
             </header>
 
@@ -56,7 +56,7 @@ export default function HomePage() {
 
                 <div className='scrolling-images-section'>
                     <div className='scrolling-title-container'>
-                        <h1 className='scrolling-title'>Velg hvor du ønsker å ta oppkjøring</h1>
+                        <h1 className='scrolling-title'>Vi gjør førerprøven <br /> billig og smidig</h1>
                     </div>
                     <div className='scrolling-image-container'>
                         <img className='scrolling-image fade-in' src={Bergen} alt="" />
