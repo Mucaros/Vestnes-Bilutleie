@@ -17,7 +17,7 @@ export default function HomePage() {
                 <img className='hero-img' src={fullCar} alt="" />
                 <div className='hero-text-container'>
                     <h1 className='header-title'>Trenger du leie av bil <br /> til førerprøven?</h1>
-                    <p className='header-subtext'>Scroll nedover på nettsiden for mer informasjon!</p>
+                    <p className='header-subtext'>Bla nedover på nettsiden for mer informasjon!</p>
                 </div>
             </header>
 
