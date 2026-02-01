@@ -91,7 +91,7 @@ export default function HomePage() {
             <footer>
                 <ul className='footer-list'>
                     <li className='footer-list-element'>Eivind Vestnes</li>
-                    <li className='footer-list-element'>tlf: 95 88 88 25</li>
+                    <li className='footer-list-element'>tlf: 958 88 822</li>
                     <li className='footer-list-element'>mail: eivind@vestnesbilutleie</li>
                 </ul>
             </footer>
